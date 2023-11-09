@@ -1,0 +1,97 @@
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@800&family=Spectral:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap');
+
+
+body{
+    background-image: url(images/bgmo.jpg);
+    background-size: cover;
+}
+
+/* Menu de naviguation */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: darkgreen;
+    padding: 10px;
+    
+}
+
+.nav_1 {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.nav_1 li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    list-style: none;
+    color: white;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+#searchbar {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 100%;
+}
+
+/* Titre de la page*/
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 200%;
+}
+
+/*Mosaïque*/
+
+.images img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 15px
+}
+
+/*Pied de page*/
+
+footer{
+    text-align: center;
+    background-color: darkgreen;
+    padding: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5rem;    
+}
+
+/*Responsive*/
+
+@media (max-width: 460px) {
+    .form {
+        margin: 0 6%;
+    }
+    
+    .nav_1 {
+        gap: 1rem;
+    }
+    
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    }
